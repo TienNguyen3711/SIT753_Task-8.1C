@@ -5,7 +5,7 @@ pipeline {
     buildDiscarder(logRotator(numToKeepStr: '20'))
   }
   triggers {
-    pollSCM('H/2 * * * *')
+    pollSCM('* * * * *')
   }
 
   stages {
